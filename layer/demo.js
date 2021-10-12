@@ -2,7 +2,7 @@
 /*! layer demo */
 
 ;!function(){
- 
+
 
 var gather = {
   htdy: $('html, body')
@@ -100,7 +100,7 @@ $('#chutiyan>a').on('click', function(){
         };
       }());
     break;
-    
+
     case 2:
       //询问框
       layer.confirm('您是如何看待前端开发？', {
@@ -114,12 +114,12 @@ $('#chutiyan>a').on('click', function(){
         });
       });
     break;
-    
+
     case 3:
       //提示层
       layer.msg('一段提示信息');
     break;
-    
+
     case 4:
       //墨绿深蓝风
       layer.alert('墨绿风格，点击确认看深蓝', {
@@ -133,7 +133,7 @@ $('#chutiyan>a').on('click', function(){
         });
       });
     break;
-   
+
     case 5:
       //捕获页
       layer.open({
@@ -146,7 +146,7 @@ $('#chutiyan>a').on('click', function(){
         }
       });
     break;
-    
+
     case 6:
       //页面层
       layer.open({
@@ -156,7 +156,7 @@ $('#chutiyan>a').on('click', function(){
         content: '<div style="padding: 10px;">任意html内容</div>'
       });
     break;
-    
+
     case 7:
       layer.open({
         type: 1,
@@ -168,11 +168,11 @@ $('#chutiyan>a').on('click', function(){
         content: '<div style="padding:20px;">即传入skin:"样式名"，然后你就可以为所欲为了。<br>你怎么样给她整容都行<br><br><br>我是华丽的酱油==。</div>'
       });
     break;
-    
+
     case 8:
       layer.tips('Hi，我是tips', this);
     break;
-    
+
     case 9:
       //iframe层
       layer.open({
@@ -182,9 +182,9 @@ $('#chutiyan>a').on('click', function(){
         shade: 0.8,
         area: ['380px', '90%'],
         content: 'mobile/' //iframe的url
-      }); 
+      });
     break;
-    
+
     case 10:
       //iframe窗
       layer.open({
@@ -197,7 +197,7 @@ $('#chutiyan>a').on('click', function(){
         content: 'https://www.baidu.com/'
       });
     break;
-    
+
     case 11:
       var ii = layer.load(0, {shade: false});
       setTimeout(function(){
@@ -231,13 +231,13 @@ $('#chutiyan>a').on('click', function(){
       layer.tab({
         area: ['600px', '300px'],
         tab: [{
-          title: '无题', 
+          title: '无题',
           content: '<div style="padding:20px; line-height:30px; text-align:center">欢迎体验layer.tab<br>此时此刻不禁让人吟诗一首：<br>一入前端深似海<br>从此妹纸是浮云<br>以下省略七个字<br>。。。。。。。<br>——贤心</div>'
         }, {
-          title: 'TAB2', 
+          title: 'TAB2',
           content: '<div style="padding:20px;">TAB2该说些啥</div>'
         }, {
-          title: 'TAB3', 
+          title: 'TAB3',
           content: '<div style="padding:20px;">有一种坚持叫：layer</div>'
         }]
       });
@@ -276,12 +276,12 @@ $('#chutiyan>a').on('click', function(){
      //layer.msg('Hi!');
     break;
   }
-  
+
   //定位到对应的
   var p = gather.demo1.find('p').eq(index);
   var top = p.parent().position().top;
   var ol = gather.demo1.find('.layui-code-ol');
-  
+
   gather.demo1.find('.layui-code-ol').animate({
     scrollTop: ol.scrollTop() + top
   }, 0);
@@ -481,12 +481,12 @@ $('.layer-demolist').on('click', function(){
       layer.msg('Hi!');
     break;
   }
-  
+
   //定位到对应的
   var p = gather.demo2.find('p').eq(index);
   var top = p.parent().position().top;
   var ol = gather.demo2.find('.layui-code-ol');
-  
+
   gather.demo2.find('.layui-code-ol').animate({
     scrollTop: ol.scrollTop() + top
   }, 0);
@@ -495,13 +495,13 @@ $('.layer-demolist').on('click', function(){
 //异步请求
 gather.downs = $('#downs');
 gather.downs [0] && function(){
-  
+
   //获取下载数
   /*$.get('//fly.layui.com/cross/handle?id=1&type=find', function(res){
     gather.downs.html(res.number);
   }, 'jsonp');*/
 
-  
+
   //获取并记录关注次数
   /*$.get('//fly.layui.com/cross/handle?id=3', function(res){
     $('#sees').html(res.number);
@@ -527,7 +527,7 @@ gather.apiRun = $('.layer-api-run');
     if(i.hasClass('icon-shousuo')){
       i.addClass('icon-zhankai').removeClass('icon-shousuo');
       othis.next().hide();
-      
+
     } else {
       i.addClass('icon-shousuo').removeClass('icon-zhankai');
       othis.next().show();
@@ -571,8 +571,8 @@ if(!-[1,] && !window.XMLHttpRequest){
   });
 }
 
-gather.getDate = function(time){ 
-  return new Date(parseInt(time)).toLocaleString() 
+gather.getDate = function(time){
+  return new Date(parseInt(time)).toLocaleString()
 };
 
 
@@ -584,7 +584,7 @@ window.paysentsin = function(){
         {
           "alt": "layer友情打赏",
           "pid": 666, //图片id
-          "src": "//res.layui.com/images/pay/layer.jpg", //原图地址
+          "src": "/images/pay/layer.jpg", //原图地址
           "thumb": "" //缩略图地址
         }
       ]
@@ -596,8 +596,8 @@ window.paysentsin = function(){
 //公告层
 layer.ready(function(){
   var local = layui.data('layui');
-  
-  
+
+
   //阿里云活动
   var notAliyun = local.notice_aliyun && new Date().getTime() - local.notice_aliyun < 1000*60*30;
   if(1 && local.notive_aliyun){
@@ -685,10 +685,10 @@ layer.ready(function(){
       layer.close(tipsIndex);
     });
   }
-  
+
   //layuiAdmin
   var notLayuiAdmin = local.notice_layuiAdmin && new Date().getTime() - local.notice_layuiAdmin < 1000*60*60*24*3
-  
+
   if(!notLayuiAdmin && false){
     layer.open({
       type: 1
@@ -703,7 +703,7 @@ layer.ready(function(){
       ,moveType: 1 //拖拽模式，0或者1
       ,resize: false
       ,content: ['<div style="padding: 15px; text-align: center; background-color: #e2e2e2;">'
-        ,'<a href="https://www.layui.com/admin/std/dist/views/" target="_blank"><img src="//cdn.layui.com/upload/2018_5/168_1527691799254_76462.jpg" alt="layuiAdmin" style="width: 100%; height:149.78px;"></a>'
+        ,'<a href="https://www.layui.com/admin/std/dist/views/" target="_blank"><img src="/upload/2018_5/168_1527691799254_76462.jpg" alt="layuiAdmin" style="width: 100%; height:149.78px;"></a>'
       ,'</div>'].join('')
       ,success: function(layero, index){
         var btn = layero.find('.layui-layer-btn');
@@ -711,7 +711,7 @@ layer.ready(function(){
           href: 'https://www.layui.com/admin/std/dist/views/'
           ,target: '_blank'
         });
-        
+
         layero.find('a').on('click', function(){
           layer.close(index);
         });
@@ -724,13 +724,13 @@ layer.ready(function(){
       }
     });
   }
-  
+
 });
 
 
 layui.use(['util', 'code', 'element'], function(){
   var util = layui.util, layim = layui.layim;
-  
+
   //固定块
   util.fixbar({
     bar1: false
@@ -740,10 +740,10 @@ layui.use(['util', 'code', 'element'], function(){
       }
     }
   });
-  
+
   //代码修饰器
   layui.code();
-  
+
 });
-  
+
 }();

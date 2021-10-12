@@ -26,7 +26,7 @@ h1,h2,h3{font-size: 14px;}
 
 .header .layui-container .logo{left: 15px;}
 .header .layui-container .layui-nav{right: 15px;}
-.header .layui-nav .layui-badge, 
+.header .layui-nav .layui-badge,
 .header .layui-nav .layui-badge-dot{right: 0;}
 
 .menu{position: absolute; right: 0; top: 0; line-height: 65px;}
@@ -80,19 +80,19 @@ h1,h2,h3{font-size: 14px;}
 .layui-side-child .layui-side-scroll{width: 170px;}
 .layui-side-child .layui-nav{padding: 10px 0; width: 160px; border-radius: 0; background: none}
 .layui-side-child .layui-nav-child{border-radius: 0;}
-.layui-side-child .layui-nav .layui-nav-title a, 
-.layui-side-child .layui-nav .layui-nav-title a:hover, 
+.layui-side-child .layui-nav .layui-nav-title a,
+.layui-side-child .layui-nav .layui-nav-title a:hover,
 .layui-side-child .layui-nav-itemed>a{color: #666 !important;}
 .layui-side-child .layui-nav-itemed .layui-nav-child{margin-bottom: 10px; background: none !important;}
 .layui-side-child .layui-nav .layui-nav-item a{height: 30px; line-height: 30px; color: #666;}
 .layui-side-child .layui-nav .layui-nav-item a:hover{background: none !important;}
 .layui-side-child .layui-nav .layui-nav-child a{color: #999 !important;}
 .layui-side-child .layui-nav .layui-nav-more{display: none;}
-.layui-side-child .layui-nav-tree .layui-this, 
-.layui-side-child .layui-nav-tree .layui-this>a, 
-.layui-side-child .layui-nav-tree .layui-nav-child dd.layui-this, 
+.layui-side-child .layui-nav-tree .layui-this,
+.layui-side-child .layui-nav-tree .layui-this>a,
+.layui-side-child .layui-nav-tree .layui-nav-child dd.layui-this,
 .layui-side-child .layui-nav-tree .layui-nav-child dd.layui-this a{background: none; color: #5FB878 !important;}
-.layui-side-child .layui-nav .layui-nav-child a:hover{color: #009688 !important} 
+.layui-side-child .layui-nav .layui-nav-child a:hover{color: #009688 !important}
 .layui-side-child .layui-nav-bar{background-color: #5FB878;}
 
 
@@ -183,7 +183,7 @@ body .layui-layout-admin .footer-demo{height: 50px; line-height: 50px; padding: 
 .site-sponsor-home .layui-btn:hover{background: #4A4855; color: #BAB8C3;}
 
 .site-sponsor-home p{position: relative; padding-top: 15px; font-size: 22px; color: #212121;}
-.site-sponsor-home p:before{content: ''; position: relative; top: -2px; display: inline-block; vertical-align: middle; width: 30px; height: 30px; margin-right: 10px; background: url(http://cdn.layui.com/upload/2018_1/168_1514869467160_26113.png) center; background-repeat: no-repeat; background-size: contain;}
+.site-sponsor-home p:before{content: ''; position: relative; top: -2px; display: inline-block; vertical-align: middle; width: 30px; height: 30px; margin-right: 10px; background: url(/upload/2018_1/168_1514869467160_26113.png) center; background-repeat: no-repeat; background-size: contain;}
 @media screen and (max-width: 750px) {
   .site-sponsor-home .layui-btn{width: 180px; height: 45px; line-height: 45px; font-size: 20px;}
   .site-sponsor-home p{font-size: 16px;}
@@ -231,7 +231,7 @@ body .layui-layer-dir .layui-layer-content{padding: 10px;}
 
 .site-table{width: 100%; margin: 10px 0;}
 .site-table thead{background-color:#f2f2f2; }
-.site-table th, 
+.site-table th,
 .site-table td{padding: 6px 15px; min-height: 20px; line-height: 20px; border:1px solid #ddd; font-size: 14px; font-weight: 400;}
 .site-table tr:nth-child(even){background: #fbfbfb;}
 
@@ -432,10 +432,10 @@ body .layui-layout-admin .site-demo{padding: 0;}
   .site-block .layui-form{margin-right: 0;}
 
   .layui-layer-dir{display: none;}
-  
+
   .site-content{width: 100%; padding: 0; overflow: auto;}
   .site-content img{max-width: 100%;}
-  
+
   .layui-code-view{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
   .layui-layout-admin .layui-side{position: fixed; top: 0; left: -260px; transition: all .3s; -webkit-transition: all .3s; z-index: 10000;}
@@ -447,7 +447,7 @@ body .layui-layout-admin .site-demo{padding: 0;}
   .footer-demo p,
   .footer-demo .site-union{height: auto; padding-right: 0;}
   .footer-demo .site-union{top: 0;}
-  .footer-demo .site-union span{top: ;}
+  .footer-demo .site-union span{top: 0;}
 
   .site-demo-area,
   .site-demo-editor,

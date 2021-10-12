@@ -44,7 +44,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       } else if(ua.match(/firefox/)){
         return 'firefox';
       }
-      
+
       return;
     }
   };
@@ -123,7 +123,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       ,'<option value="element/auxiliar.html#blockquote">blockquote 引用块</option>'
       ,'<option value="element/auxiliar.html#fieldset">fieldset 字段集</option>'
       ,'<option value="element/auxiliar.html#hr">hr 分割线</option>'
-      
+
       ,'<option value="modules/layer.html">layer 弹出层/弹窗综合</option>'
       ,'<option value="modules/laydate.html">laydate 日期时间选择器</option>'
       ,'<option value="modules/laypage.html">laypage 分页</option>'
@@ -176,11 +176,11 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
 
     if(!notParter && options.tips){
       var tipsIndex = layer.tipsIndex = layer.tips(
-        ['<a href="'+ options.url +'" target="_blank" style="display: block; line-height: 30px; padding: 10px; text-align: center; font-size: 14px; background-image: linear-gradient(to right,#8510FF,#D025C2,#FF8B2D,#FF0036); color: #fff; '+ (options.tipsCss || '') +'">' 
+        ['<a href="'+ options.url +'" target="_blank" style="display: block; line-height: 30px; padding: 10px; text-align: center; font-size: 14px; background-image: linear-gradient(to right,#8510FF,#D025C2,#FF8B2D,#FF0036); color: #fff; '+ (options.tipsCss || '') +'">'
 
           //阿里云经典：background-image: linear-gradient(to right,#8510FF,#D025C2,#FF8B2D,#FF0036);
           //阿里云活动：background-image: linear-gradient(to right,#8510FF,#D025C2,#F64E2C,#FF0036);
-          
+
           //腾讯经典：background-image: linear-gradient(to right,#1242A4,#1746A1,#CFAE71,#1746A1);
 
           ,options.desc || ''
@@ -190,7 +190,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
           tips: (options.tipsStyle ? new Function('return '+ options.tipsStyle)() : [3, '#9F17E9'])
 
           //阿里云经典：[3, '#9F17E9']
-          //腾讯云经典：[3, '#1443A3'] //[3, '#803ED9'] 
+          //腾讯云经典：[3, '#1443A3'] //[3, '#803ED9']
 
           ,skin: 'layui-hide-xs'
           ,maxWidth: 320
@@ -249,7 +249,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       var tpl = ['{{# if(d.length > 0){ }}'
       ,'<div class="layui-carousel" id="layui-spm-event-parter" lay-filter="site-top-carousel">'
         ,'<div carousel-item>'
-          ,'{{# layui.each(d, function(index, v){ ' 
+          ,'{{# layui.each(d, function(index, v){ '
             ,'var tg = v.ad ? "tg" : "";'
             ,'var style = v.tipsCss || "";'
           ,'}}'
@@ -286,7 +286,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
         carousel.on('change(site-top-carousel)', function(obj){
           notice(data[obj.index], obj.item.find('a'));
         });
-        
+
       });
     }, 'jsonp');*/
   }();
@@ -304,7 +304,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
     }, function(data){
       data = data || [];
       data = data[0] || {};
-      
+
       var content = data.content;
       if(!content) return;
 
@@ -323,7 +323,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
     }, function(data){
       data = data || [];
       data = data[0] || {};
-      
+
       var content = data.content;
       if(!content) return;
 
@@ -377,8 +377,8 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
         photos: {
           data: [{
             alt: 'layui 公众号'
-            ,"src": "https://cdn.layui.com/upload/2017_8/168_1501890714998_68095.jpg" //原图地址
-            ,"thumb": "https://cdn.layui.com/upload/2017_8/168_1501890714998_68095.jpg" //缩略图地址
+            ,"src": "/upload/2017_8/168_1501890714998_68095.jpg" //原图地址
+            ,"thumb": "/upload/2017_8/168_1501890714998_68095.jpg" //缩略图地址
           }]
         }
       })
@@ -397,7 +397,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
     var value = data.value;
     location.href = value === 'new' ? '/' : ('/' + value + '/doc/');
   });
-  
+
 
   //首页 banner
   setTimeout(function(){
@@ -443,7 +443,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       console.error(e)
     }
   }();
-  
+
 
 
   //展示当前版本
@@ -456,7 +456,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       getStars.html(res.stargazers_count);
     }, 'json');
   }
-  
+
   //首页操作
   (function(){
     var elemDowns = $('.site-showdowns');
@@ -466,13 +466,13 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
           elemDowns.html(res.number);
       }, 'jsonp');*/
     }
-    
+
     //记录下载
-    $('.site-down').on('click',function(e){
+    /*$('.site-down').on('click',function(e){
       var othis = $(this)
       ,local = layui.data('layui')
       ,setHandle = function(){
-        /*$.get('//fly.layui.com/cross/handle?id=10', function(){}, 'jsonp');*/
+        /!*$.get('//fly.layui.com/cross/handle?id=10', function(){}, 'jsonp');*!/
       };
       if(!local.disclaimer){
         e.preventDefault();
@@ -498,10 +498,10 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       } else {
         setHandle();
       }
-    });
+    });*/
   })();
-  
-  
+
+
   //固定Bar
   util.fixbar({
     showHeight: 60
@@ -511,7 +511,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       }
     }()
   });
-  
+
   //窗口scroll
   ;!function(){
     var main = $('.site-menu'), scroll = function(){
@@ -526,7 +526,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
             width: main.parent().width()
           });
         }
-      }else {     
+      }else {
         if(main.hasClass('site-fix')){
           main.removeClass('site-fix').css({
             width: 'auto'
@@ -561,12 +561,12 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       layer.closeAll('tips');
     }
   });
-  
+
   //代码修饰
   layui.code({
     elem: 'pre'
   });
-  
+
   //目录
   var siteDir = $('.site-dir');
   if(siteDir[0] && $(window).width() > 750){
@@ -653,7 +653,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
     scrollElem: $('.layui-side-scroll').eq(1)
     ,thisElem: $('.site-demo-table-nav').find('li.layui-this')
   });
-  
+
 
 
   //查看代码
@@ -663,7 +663,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       DemoCode.val()
       ,'<body>'
       ,global.preview
-      ,'\n<script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>'
+      ,'\n<script src="/layui/dist/layui.js" charset="utf-8"></script>'
       ,'\n<!-- 注意：如果你直接复制所有代码到本地，上述 JS 路径需要改成你本地的 -->'
       ,$('#LAY_democodejs').html()
       ,'\n</body>\n</html>'
@@ -747,7 +747,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
         ,unicode: $.trim(othis.find('.doc-icon-code').html())
       });
     });
-    
+
     $('.site-h1').html('<textarea style="width: 100%; height: 600px;">'+ JSON.stringify(iconData) + '</textarea>');
   };
 
