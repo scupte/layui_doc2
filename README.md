@@ -4,6 +4,8 @@
 
 访问[http://layui.itmtr.cn/](http://layui.itmtr.cn/)
 
+> layui.itmtr.cn的域名和服务器都在2025年到期，后面还会续费，请大家放心收藏。
+
 本站仅为layui文档镜像站点！
 
 本站仅提供文档演示和下载！
