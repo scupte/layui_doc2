@@ -132,7 +132,7 @@
       <div class="layui-main">
        <div id="LAY_preview">
         <blockquote class="layui-elem-quote">
-          大部分演示都在 layer 独立组件的官网（<a class="layui-font-blue" href="https://layer.layui.com/" target="_blank">layer.layui.com</a>），与内置的 layer 模块，用法是完全一致的
+          大部分演示都在 layer 独立组件的官网（<a class="layui-font-blue" href="/layer" target="_blank">layer</a>），与内置的 layer 模块，用法是完全一致的
         </blockquote>
         <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;"> <legend>特殊例子</legend>
         </fieldset>
@@ -153,7 +153,7 @@ data-ad-slot="3820120620"></ins>
          </div>
         </div>
         <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;"> <legend>更多示例</legend>
-        </fieldset> <a class="layui-btn layui-btn-normal" href="https://layer.layui.com/" target="_blank">去 layer 官网查看</a>
+        </fieldset> <a class="layui-btn layui-btn-normal" href="/" target="_blank">去 layer 官网查看</a>
        </div>
       </div>
      </div>
@@ -281,7 +281,7 @@ layui.use('layer', function(){ //独立版的layer无需执行这一句
         ,success: function(layero){
           var btn = layero.find('.layui-layer-btn');
           btn.find('.layui-layer-btn0').attr({
-            href: 'http://www.layui.com/'
+            href: '/'
             ,target: '_blank'
           });
         }
@@ -293,7 +293,7 @@ layui.use('layer', function(){ //独立版的layer无需执行这一句
 
       layer.open({
         type: 1
-        ,offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+        ,offset: type //具体配置参考：http://layui.itmtr.cn/doc/modules/layer.html#offset
         ,id: 'layerDemo'+type //防止重复弹出
         ,content: '<div style="padding: 20px 100px;">'+ text +'</div>'
         ,btn: '关闭全部'

@@ -92,7 +92,7 @@ $('#chutiyan>a').on('click', function(){
             skin: 'layer-ext-moon'
           }, function(index, layero){
             layero.find('.layui-layer-btn0').attr({
-              href: 'http://layer.layui.com/skin.html',
+              href: 'http://layui.itmtr.cn/layer/skin.html',
               target: '_blank'
             });
             layer.close(index);
@@ -464,7 +464,7 @@ $('.layer-demolist').on('click', function(){
       //弹出即全屏
       var index = layer.open({
         type: 2,
-        content: 'https://fly.layui.com/jump/alyhot/',
+        content: 'http://layui.itmtr.cn/jump/alyhot/',
         area: ['320px', '195px'],
         maxmin: true
       });
@@ -619,7 +619,7 @@ layer.ready(function(){
       ,success: function(layero, index){
         var btn = layero.find('.layui-layer-btn');
         btn.find('.layui-layer-btn0').attr({
-          href: 'https://fly.layui.com/jump/alyhot/'
+          href: 'http://layui.itmtr.cn/jump/alyhot/'
           ,target: '_blank'
         });
       }
@@ -638,51 +638,11 @@ layer.ready(function(){
   var notNavTips = local.notice_navtips && new Date().getTime() - local.notice_navtips < 1000*60*30;
   var elemNavTips = $('#layer-spm-event-parter');
   if(elemNavTips[0] && !notNavTips && 0){
-    var tipsIndex = layer.tips(
-      ['<a href="https://fly.layui.com/jump/txyhot/" target="_blank" id="layer-spm-event-parter-tips" style="display: block; line-height: 30px; padding: 10px; text-align: center; font-size: 14px; background-color: #BE9241; background-image1: linear-gradient(to right,#79693F,#79693F,#4E4632,#302E2A); color: #fff;">'
-        ,'<p>腾讯云产品限时秒杀</p>'
-        ,'<p style="">爆款服务器超低价</p>'
-      ,'</a>'].join('')
-      ,'#layer-spm-event-parter'
-      ,{
-        tips: [3, '#BE9241']
-        ,maxWidth: 320
-        ,time: 0
-        ,anim: 2
-        ,tipeMore: true
-        ,success: function(layero, index){
-          layero.find('.layui-layer-content').css({
-            'padding': 0
-          });
-          layero.find('a').on('click', function(){
-            elemNavTips.trigger('click');
-          });
-
-          //隐藏小箭头
-          var tipsG = layero.find('.layui-layer-TipsG');
-          if(tipsG.css('left') !== '5px'){
-            tipsG.hide();
-          }
-
-          //移动端样式
-          if(elemNavTips.parent().css('display') === 'none'){
-            layero.css({
-              left: '50%'
-              ,top: '80px'
-              ,'margin-left': '-106px'
-            });
-            tipsG.hide();
-          }
-        }
-      }
-    )
-
     elemNavTips.on('click', function(){
       layui.data('layui', {
         key: 'notice_navtips'
         ,value: new Date().getTime()
       });
-      layer.close(tipsIndex);
     });
   }
 
@@ -703,12 +663,12 @@ layer.ready(function(){
       ,moveType: 1 //拖拽模式，0或者1
       ,resize: false
       ,content: ['<div style="padding: 15px; text-align: center; background-color: #e2e2e2;">'
-        ,'<a href="https://www.layui.com/admin/std/dist/views/" target="_blank"><img src="/upload/2018_5/168_1527691799254_76462.jpg" alt="layuiAdmin" style="width: 100%; height:149.78px;"></a>'
+        ,'<a href="http://layui.itmtr.cn/admin/std/dist/views/" target="_blank"><img src="/upload/2018_5/168_1527691799254_76462.jpg" alt="layuiAdmin" style="width: 100%; height:149.78px;"></a>'
       ,'</div>'].join('')
       ,success: function(layero, index){
         var btn = layero.find('.layui-layer-btn');
         btn.find('.layui-layer-btn0').attr({
-          href: 'https://www.layui.com/admin/std/dist/views/'
+          href: 'http://layui.itmtr.cn/admin/std/dist/views/'
           ,target: '_blank'
         });
 
@@ -736,7 +696,7 @@ layui.use(['util', 'code', 'element'], function(){
     bar1: false
     ,click: function(type){
       if(type === 'bar1'){
-        location.href = 'http://fly.layui.com/';
+        location.href = 'https://blog.itmtr.cn/';
       }
     }
   });
